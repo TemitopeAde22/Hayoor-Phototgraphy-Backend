@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Activation Email</title>
+        <link rel="stylesheet" href="<%=url%>/public/css/output.css" />
+
+        <style type="text/css">
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Times New Roman", Times, serif;
+            }
+            p {
+                font-family: "Times New Roman", Times, serif;
+                font-size: 15px;
+                font-family: "Times New Roman", Times, serif;
+            }
+
+            .wrapper {
+                padding: 8px;
+                width: 60%;
+            }
+            @media screen and (max-width: 767px) {
+                .wrapper {
+                    width: 100%;
+                }
+            }
+
+            .text {
+                background-color: lightslategray;
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 15px;
+                border-radius: 5px;
+                font-family: "Times New Roman", Times, serif;
+                font-weight: bold;
+            }
+            .text-one {
+                margin-top: px;
+            }
+            .heading {
+                margin-bottom: 40px;
+                font-size: 20px;
+            }
+            .footer {
+                background-color: #f6f6f6;
+                padding: 20px;
+            }
+            .text-body {
+                background-color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="text-body">
+                <p class="heading">Dear Hayoor Photography</p>
+                <p class="text-one">
+                    Great news! A new client has just booked a photography
+                    session through your website, emphasizing the demand for
+                    your renowned expertise.
+
+                    <!-- Additional Fields -->
+                </p>
+
+                <p class="text">Booking Details:</p>
+                <p>The details of the booking are as follows:</p>
+                <div>
+                    <p><strong>First Name:</strong> <%= user.firstname %></p>
+                    <p><strong>Last Name:</strong> <%= user.lastname%></p>
+                    <p><strong>Email:</strong> <%= user.email %></p>
+                    <p><strong>Address:</strong> <%= user.address %></p>
+                    <p>
+                        <strong>Phone Number:</strong> <%= user.phoneNumber %>
+                    </p>
+                    <p>
+                        <strong>Preferred Date of shoot:</strong> <%= user.Date
+                        %>
+                    </p>
+                    <p>
+                        <strong>Type of Session:</strong> <%= user.TypeofSession
+                        %>
+                    </p>
+                    <p>
+                        <strong>Package Selection:</strong> <%=
+                        user.PackageSelection %>
+                    </p>
+                    <p>
+                        <strong>Preferred Location:</strong> <%=
+                        user.PreferredLocation %>
+                    </p>
+                    <p>
+                        <strong>Other session details (optional):</strong> <%=
+                        user.SessionOthers %>
+                    </p>
+                    <p>
+                        <strong
+                            >Additional Location Information (optional):</strong
+                        >
+                        <%= user.AdditionalLocationInformation %>
+                    </p>
+
+                    <p>
+                        <strong>Type of Session:</strong> <%= user.TypeofSession
+                        %>
+                    </p>
+                    <p>
+                        <strong>Special Request (optional):</strong> <%=
+                        user.SpecialRequest %>
+                    </p>
+                    <p>
+                        <strong>Additional Services (optional):</strong> <%=
+                        user.AdditionalServices %>
+                    </p>
+                    <p>
+                        <strong>PhotoBooth (optional):</strong> <%=
+                        user.PhotoBooth %>
+                    </p>
+                </div>
+                <div class="">
+                    <div>
+                        <p>
+                            Please review the details and reach out to the
+                            client to discuss any specific requirements or
+                            preferences they may have. We're confident that your
+                            creative touch will result in stunning photographs
+                            that will be cherished for years to come.
+                        </p>
+                        <p>Hayoor photography Team</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="footer">
+                        If you have any questions, please don't hesitate to
+                        contact us at
+                        <a href="mailto:support@temitope.com"
+                            >teejay4125@gmail.com</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
