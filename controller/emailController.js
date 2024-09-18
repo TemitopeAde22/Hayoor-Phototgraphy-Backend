@@ -30,7 +30,6 @@ const correctionMail = asyncHandler(async (req, res) => {
         PreferredLocation,
         AdditionalLocationInformation,
         SpecialRequest,
-        PackageSelection,
         AdditionalServices,
         PhotoBooth,
     } = req.body
@@ -48,7 +47,6 @@ const correctionMail = asyncHandler(async (req, res) => {
         PreferredLocation,
         AdditionalLocationInformation,
         SpecialRequest,
-        PackageSelection,
         AdditionalServices,
         PhotoBooth,
     }
